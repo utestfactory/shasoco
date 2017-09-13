@@ -6,7 +6,7 @@
 #
 
 redmine:
-    image: sameersbn/redmine:3.1.3
+    image: shasoco/redmine:3.3-stable
     hostname: redmine.<%=domain%>
     restart: always
     links:
