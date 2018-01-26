@@ -8,13 +8,14 @@ proxy:
     image: tutum/haproxy:0.2.1
     hostname: proxy.<%=domain%>
     restart: always
-    links:
+    links: # to instance (not to yaml file)
      - wordpress
      - directory
      - gitlab
      - redmine
      - vault
      - gollum
+     - gollum-xp
     expose:
      - 80
      - 443
